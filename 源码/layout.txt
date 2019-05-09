@@ -1,0 +1,132 @@
+/*
+* @Author: du
+* @Date:   2019-04-28 18:36:43
+ * @Last Modified by:   du
+ * @Last Modified time: 2019-04-29 02:36:08
+*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	border:0px;
+}
+
+ @font-face {
+    font-family: 'hf';
+    src: url('res/font/webfont.eot'); /* IE9 */
+    src: url('res/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('res/font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('res/font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('res/font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+header,footer,.sy{
+	font-family: "hf";
+}
+.header{
+	text-align: center;
+	padding: 1rem;
+}
+.title{
+	padding: 0.5rem;
+}
+.nav{
+	max-width: 100rem;
+	border-radius: 1.5rem;
+    padding: 0.35rem;
+    margin: 0.5rem auto;
+    background: #00000010;
+}
+.nav .item{
+	margin: 0.1rem auto; 
+	padding: 0.1rem 0.3rem;
+	display: inline-block;
+	width: 3.5rem;
+	border: 0.2rem black ;
+	color: #000;
+	text-decoration:none;
+    transition: all 0.5s ease-in .1s;
+}
+.nav .item:hover{
+    border: #343434 double 2px;
+    background: #343434;
+    border-radius: 0.5rem;
+    /* width: 140px; */
+    color: #caddf5;
+}
+.container{
+	padding: 0.1rem 0.5rem;
+}
+.container #main{
+	border-radius: 1.5rem;
+	display: block;
+	height: 23rem;
+	background: url("res/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 8rem 3rem 5rem 2rem;
+	text-align: center;
+}
+.describe{
+	text-align: center;
+	color: #000;
+	padding: 2rem;
+	max-width: 40rem;
+	margin:auto;
+	background: #ffffffbe;
+}
+.describe p{
+	padding: 1rem;
+	text-align: left;
+	max-height: 13rem;
+	overflow: overlay;
+	line-height: 1.5rem;
+}
+.container #main .describe .title{
+	text-align: center;
+}
+#pic-group{
+	text-align: center;
+	display: none;
+	height: 10rem;
+	overflow: hidden;
+}
+#pic-group img{
+	margin: 0px;
+	vertical-align: top;
+	border-radius: 1rem;
+	width: 18rem;
+}
+/*
+分模块写css
+ */
+.sy p{
+	text-align: center;
+	padding: 0.5rem 3rem;
+}
+
+.fk input,.fk textarea{
+	border: black solid;
+    background: rgb(227, 247, 255);
+    color: rgba(255, 111, 111, 0.856);
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 20rem;
+}
+.fk input[type='submit']{
+	border: none;
+    background: #ff6d6d;
+    color: #eeffee;
+    border-radius: 7px;
+    height: 35px;
+    padding: 3px;
+    width: 21rem;
+}
+.fk label{
+	text-align: left;
+	margin-bottom: 0.5rem;
+}
+
+#footer{
+	margin: 1rem ;
+	text-align: center;
+}
