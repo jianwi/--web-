@@ -3,7 +3,7 @@
 * @Author: du
 * @Date:   2019-04-28 21:01:37
 * @Last Modified by:   du
-* @Last Modified time: 2019-05-09 01:26:01
+* @Last Modified time: 2019-05-13 17:11:21
 */
 // 初始化
 // 给导航设置事件监听
@@ -26,7 +26,6 @@ showItem(document.getElementsByName("sy")[0]);
  */
 function showItem(ele){
 	var item=ele.name;
-
 	switch (item) {
 		case "bg":
 			break;
@@ -121,12 +120,12 @@ function submitData(ele) {
 function danmuInit(){
 	var pattern=/\[c=([\S\s]*?)\]([\S\s]*?)\[\/c\]/;
 	$.getJSON("http://cron.jianwi.cn/2019/php/",(res,erro)=>{
-		console.log(res);
+		// console.log(res);
 		$("#danmu").empty();
 		for (let dm_data of res){
 			var dm_ubb=pattern.exec(dm_data.text)
 			if (dm_ubb){
-				console.log(dm_ubb);
+				// console.log(dm_ubb);
 				var danmu=`${dm_data.name}@${dm_data.type}:${dm_ubb[2]}`;
 				var dm_box=`
 				<div class="dm">
@@ -181,10 +180,12 @@ function danMu() {
 		}
 	`
 	dh.innerHTML+=keyframes;
-	let time =Math.floor(Math.random() * 80+120);
+	let time =Math.floor(Math.random() * 120+180);
 	let top=Math.floor(Math.random() * 10+1);
 	dm.style=`animation:ani${index} ${time}s ease-out 0s;margin-top:${top}rem`;
 	}
 }
-//35s刷新一次弹幕数据
-setInterval("danmuInit()",35000);
+//45s刷新一次弹幕数据
+setInterval("danmuInit()",45000);
+// 彩蛋
+$("#github").click(()=>{window.open("https://github.com/jianwi/-","_blank")})

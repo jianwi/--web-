@@ -2,7 +2,7 @@
 * @Author: du
 * @Date:   2019-04-28 18:36:43
  * @Last Modified by:   du
- * @Last Modified time: 2019-05-08 20:52:37
+ * @Last Modified time: 2019-05-12 23:27:18
 */
 
 @media (max-width:700px){
@@ -30,6 +30,15 @@
     url('res/font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('res/font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
 }
+@font-face {
+    font-family: 'zw';
+    src: url('res/zw/font/webfont.eot'); /* IE9 */
+    src: url('res/zw/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('res/font/zw/webfont.woff') format('woff'), /* chrome、firefox */
+    url('res/font/zw/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('res/font/zw/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
 header,footer,.sy{
 	font-family: "hf";
 }
@@ -95,6 +104,7 @@ header,footer,.sy{
 
 }
 .describe p{
+	font-family: 'zw';
 	padding: 1rem;
 	text-align: left;
 	max-height: 13rem;

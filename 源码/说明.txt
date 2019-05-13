@@ -1,7 +1,0 @@
-index.html为网页入口
-layout.css为布局文件
-main.js为脚本文件
-
-未使用任何框架，由原生html+css+javascript编写。
-
-时间较紧，项目暂未完成
